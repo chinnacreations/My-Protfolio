@@ -71,10 +71,10 @@ export default function MainBannerPage() {
         <div className='baanner-image-main '>
           <div className='baanner-image-main-text-center'>
             <h3 className='text-white-hwading-mian-ng'>
-              HI THIS IS <span className='text-color-span-main-banner'>THIRUMANI SATISH</span> .
+              HI THIS IS <span className='text-color-span-main-banner'>THIRUMANI SATISH</span>
             </h3>
             <h3 className='text-white-hwading-mian-ng'>
-              I AM A  <span className='text-color-span-main-banner'>MERN STAK DEVELOPER</span>.
+              I AM A  <span className='text-color-span-main-banner'>MERN STACK DEVELOPER</span>
             </h3>
           </div>
         </div>
