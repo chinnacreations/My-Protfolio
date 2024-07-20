@@ -14,21 +14,13 @@ const Whoweserve = () => {
 
       <div className="solutions-area ptb-80">
         <div className="container" >
-          <div className="row">
-            <div className="col-7">
-            <div className="section-title" id='my-qualification'>
+        <div className="section-title" id='my-qualification'>
             <h2>MY QUALIFICATION</h2>
             <div className="bar"></div>
             <p className="para-who-we-serve">
               I hold a diploma in Tool & Die Making, equipping me with strong foundational knowledge in the field. Additionally, I've completed a certification course in Nxt Wave CCBP, enhancing my skills in MERN Stack Developer.
             </p>
           </div>
-            </div>
-            <div className="col-5">
-            <img src={education} alt="" height={250} width={300} />
-            </div>
-          </div>
-        
           <div className="row justify-content-center">
            
             <div className="col-lg-4 col-sm-6 col-md-6">
