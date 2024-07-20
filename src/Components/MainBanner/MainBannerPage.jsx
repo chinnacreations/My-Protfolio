@@ -32,7 +32,7 @@ export default function MainBannerPage() {
                   width: '350px',
                   fontFamily: 'Miso-Light',
                 }}>
-                  HI... THIS IS <span className='text-color-span-main-banner'>THIRUMANI SATISH</span> .
+                  HI... THIS IS <span className='text-color-span-main-banner'>THIRUMANI SATISH</span>
                 </div>
               </div>
             }
@@ -56,7 +56,7 @@ export default function MainBannerPage() {
                   fontSize: '22px',
                   fontFamily: 'Miso-Light',
                 }}>
-                  I AM A  <span className='text-color-span-main-banner'>MERN STAK DEVELOPER</span>.
+                  I AM A  <span className='text-color-span-main-banner'>MERN STACK DEVELOPER</span>
                 </div>
               </div>
             }
