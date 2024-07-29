@@ -14,6 +14,8 @@ import redux from '../../public/images/Technologies/redux.png'
 import js from '../../public/images/Technologies/js.png'
 import node from '../../public/images/Technologies/node js.png'
 import mongodb from '../../public/images/Technologies/mongodb.png'
+import sass from '../../public/images/Technologies/sass.png'
+import nextjs from  '../../public/images/Technologies/nextjs.png'
 
 import 'swiper/css'; 
 import 'swiper/css/bundle';
@@ -30,6 +32,10 @@ const technologiesData = [
     {
         image: typescript,
         alt: 'typescript',
+    },
+    {
+        image: sass,
+        alt: 'sass',
     },
     {
         image: mysql,
@@ -70,6 +76,10 @@ const technologiesData = [
     {
         image: node,
         alt: 'node Logo',
+    },
+    {
+        image: nextjs,
+        alt: 'nextjs Logo',
     },
     
    
@@ -123,7 +133,7 @@ const Technologies = () => {
                             {technologiesData.map((tech, index) => (
                                 <div className="swiper-slide" key={index}>
                                     <div className="brand-box">
-                                        <img src={tech.image} alt={tech.alt} height={50} width={100} />
+                                        <img src={tech.image} alt={tech.alt} className='skills-icons' />
                                     </div>
                                 </div>
                             ))}

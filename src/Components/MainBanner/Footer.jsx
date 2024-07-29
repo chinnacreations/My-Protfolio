@@ -12,6 +12,9 @@ import { FaXTwitter, FaLinkedinIn, FaWhatsapp, FaFacebookF } from "react-icons/f
 import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const currentYear = new Date().getFullYear();
   const handleWhatsAppClick = () => {
     const phoneNumber = '9908022727';
@@ -84,13 +87,13 @@ const Footer = () => {
 
                 <ul className="list">
                   <li>
-                    <Link to="/faq">FAQ's</Link>
+                    <Link to="/faq" onClick={scrollToTop}>FAQ's</Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/privacy-policy" onClick={scrollToTop}>Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="/terms-conditions">Terms & Conditions</Link>
+                    <Link to="/terms-conditions" onClick={scrollToTop}>Terms & Conditions</Link>
                   </li>
                   <li>
                     <Link to="/">My SKills</Link>
