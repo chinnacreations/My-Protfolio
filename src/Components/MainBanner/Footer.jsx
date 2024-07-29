@@ -17,7 +17,7 @@ const Footer = () => {
   };
   const currentYear = new Date().getFullYear();
   const handleWhatsAppClick = () => {
-    const phoneNumber = '9908022727';
+    const phoneNumber = '9160591908';
     const message = 'Hello Data Meadows, Im interested in your services and would appreciate it if you could share a quotation.Thank you!'; // Optional: Replace with your message
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank', 'noopener noreferrer');
