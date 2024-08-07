@@ -23,7 +23,7 @@ const Myexperience4 = () => {
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
                 <h2>Skill Technologies</h2>
-                <p>Jan-2024 - Still</p>
+                <p>Aug-2023 - Still</p>
                 <div className="bar"></div>
                 <p>
                 At Skill Technologies, my role as a MERN Stack Developer involves developing robust and scalable web applications with a keen focus on responsive design. Here are three key points about my experience:

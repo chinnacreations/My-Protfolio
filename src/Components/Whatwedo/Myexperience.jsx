@@ -106,7 +106,7 @@ const OurServices = () => {
                     variant="body2"
                     color="text.secondary"
                   >
-                    Feb-2023 - Nov-2023
+                    Feb-2023 - Aug-2023
                   </TimelineOppositeContent>
 
                   <TimelineSeparator>
@@ -131,7 +131,7 @@ const OurServices = () => {
                     variant="body2"
                     color="text.secondary"
                   >
-                   Jan-2024 - Still
+                   Aug-2023 - Still
                   </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector />

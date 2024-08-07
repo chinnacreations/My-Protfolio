@@ -24,7 +24,7 @@ const Myexperience3 = () => {
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
                 <h2>Sairam Designs & Drafting</h2>
-                <p>Feb-2023 - Nov-2023</p>
+                <p>Feb-2023 - Aug-2023</p>
                 <div className="bar"></div>
                 <p>
                 At Sairam Designs and Drafting, my role as an AutoCAD designer involved creating detailed and precise layouts for pharmaceutical companies. My key responsibilities included:
