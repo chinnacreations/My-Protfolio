@@ -32,7 +32,7 @@ export default function MainBannerPage() {
                   width: '350px',
                   fontFamily: 'Miso-Light',
                 }}>
-                  HI..., I am <span className='text-color-span-main-banner'>THIRUMANI SATISH</span>
+                  HI..., I AM <span className='text-color-span-main-banner'>THIRUMANI SATISH</span>
                 </div>
               </div>
             }
