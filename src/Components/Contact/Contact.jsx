@@ -142,7 +142,7 @@ const ContactForm = () => {
                   Permanent Address :
                 </p>
                 <p>
-                  #1-142, Garesepudi, Kruthivennu mandal, Machlipatnam, Krishna Dist, 521324, Andhra Pradesh.
+                  #1-142, Garesepudi, Kruthivennu mandal, Machilipatnam, Krishna Dist, 521324, Andhra Pradesh.
                 </p>
                 <hr />
                 <p>

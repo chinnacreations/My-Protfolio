@@ -119,7 +119,7 @@ const Footer = () => {
                   <li>
                     <CiLocationOn />
                     <span className="fw-bold"> Permanent Address – </span>
-                    #1-142, Garesepudi, Kruthivennu mandal,Machlipatnam, Krishna Dist, 521324, Andhra Pradesh.
+                    #1-142, Garesepudi, Kruthivennu mandal,Machilipatnam, Krishna Dist, 521324, Andhra Pradesh.
                   </li>
                   <li>
                     <CiLocationOn />
