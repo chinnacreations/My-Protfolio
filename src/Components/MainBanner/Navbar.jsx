@@ -85,7 +85,7 @@ const NavBar = () => {
                       className="nav-link"
                       onClick={() => window.scrollTo(0, 0)}
                     >
-                      About Us
+                      About Me
                     </a>
                   </li>
                   <li className="nav-item">

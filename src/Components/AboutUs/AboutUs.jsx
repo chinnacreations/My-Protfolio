@@ -19,7 +19,7 @@ const AboutUs = () => {
         <div className="d-table-cell">
           <div className="container" id="about-us">
           <div className="section-title  ">
-                    <h2 className="">ABOUT US</h2>
+                    <h2 className="">ABOUT ME</h2>
                     <div className="bar"></div>
                     <p className="para-about-us">
                       Passionate software developer with a knack for crafting

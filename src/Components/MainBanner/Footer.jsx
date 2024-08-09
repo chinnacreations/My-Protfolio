@@ -58,7 +58,7 @@ const Footer = () => {
 
                 <ul className="list">
                   <li>
-                    <a href="#about-us">About Us</a>
+                    <a href="#about-us">About Me</a>
                   </li>
                   <li>
                     <a href="#my-experience">My Experience</a>
