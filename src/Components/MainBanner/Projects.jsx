@@ -80,7 +80,7 @@ const Projects = () => {
           </div>
           <div className="col-12 col-md-6">
           <div className="section-title">
-          <h3 className="text-center mt-3">MY PROFESSIONAL JOURNEY</h3>
+          <h3 className="text-center">MY PROFESSIONAL JOURNEY</h3>
           <div className="bar"></div>
           <p>Over the past year, I've gained valuable hands-on experience working with a diverse range of projects, enhancing my skills as a MERN stack developer. I've collaborated with various clients and companies, contributing to the development and deployment of innovative solutions that meet their unique needs. My journey has involved both front-end and back-end development, utilizing the latest technologies to create responsive and efficient web applications.</p>
           <ul className="list-style">
