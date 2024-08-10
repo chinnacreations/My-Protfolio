@@ -5,6 +5,7 @@ import OurServices from '../Whatwedo/Myexperience'
 import Ourvalues from '../MyQualification/MySkills'
 import Whoweserve from '../WhoWeServe/MyQualification'
 import AboutUs from '../AboutUs/AboutUs'
+import Projects from './Projects'
 
 export default function MainBannerPage() {
   return (
@@ -83,6 +84,7 @@ export default function MainBannerPage() {
       <Technologies />
       <AboutUs />
       <OurServices />
+      <Projects />
       <Ourvalues />
       <Whoweserve />
     </>
