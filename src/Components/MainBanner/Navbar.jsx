@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
-import logo from "../../public/images/Logo/logo-bg-none.png";
+import logo from "../../public/Logos/TITLE LOGO.png";
 
 const NavBar = () => {
   const [currentPath, setCurrentPath] = useState("");
@@ -49,11 +49,11 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link to="/" className="navbar-brand">
                 <img
-                  className="logo-image-h-w"
+                  className="logo-image-h-w w-[100] h-[100]"
                   src={logo}
                   alt="logo"
-                  width={110}
-                  height={36}
+                  width={100}
+                  height={50}
                 />
               </Link>
 
