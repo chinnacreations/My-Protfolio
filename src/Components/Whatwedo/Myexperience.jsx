@@ -29,6 +29,20 @@ import { GiCartwheel } from "react-icons/gi";
 import { SiAutocad } from "react-icons/si";
 
 const OurServices = () => {
+  const calculateITExperience = () => {
+    const startDate = new Date("2023-02-01"); // IT start
+    const currentDate = new Date();
+
+    const diffInMonths =
+      (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+      (currentDate.getMonth() - startDate.getMonth());
+
+    const years = Math.floor(diffInMonths / 12);
+    const months = diffInMonths % 12;
+
+    return `${years} Years ${months} Months`;
+  };
+
   return (
     <>
       <div className="services-area bg-f7fafd">
@@ -39,69 +53,89 @@ const OurServices = () => {
           >
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
-                <h2>MY EXPERIENCE</h2>
+                <h2>MY EXPERIENCE {calculateITExperience()}</h2>
                 <div className="bar"></div>
                 <p>
-                  With mechanical expertise and software proficiency, I excel in
-                  solving complex challenges at the intersection of technology
-                  and engineering. My experience spans designing intricate
-                  systems and developing innovative solutions, fostering a
-                  holistic approach to problem-solving.
+                  I am a passionate IT professional specializing in Front-End and Web
+                  Application Development. My experience focuses on building scalable,
+                  high-performance applications using React.js, Next.js, and modern UI
+                  frameworks. I excel in API integration, performance optimization, and
+                  delivering clean, user-centric solutions that align with real-world
+                  business requirements.
                 </p>
+
               </div>
 
               <Timeline position="alternate">
+
                 <TimelineItem>
                   <TimelineOppositeContent
-                    sx={{ m: 'auto 0' }}
-                    align="right"
+                    sx={{ m: "auto 0" }}
                     variant="body2"
                     color="text.secondary"
                   >
-                    Aug-2018 - Nov-2019
+                    Mar-2025 - Present
                   </TimelineOppositeContent>
 
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="primary">
-                    <LiaPlaneSolid size={25} />
+                      <LaptopMacIcon />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: '12px', px: 2 }}>
+
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                 <Link to='/my-experience-1' className="learn-more-btn" onClick={() => window.scroll(0, 0)}>Vem Technologies</Link> 
+                      <Link
+                        to="/my-experience-galaxy"
+                        className="learn-more-btn"
+                        onClick={() => window.scroll(0, 0)}
+                      >
+                        Galaxy Tech Solutions
+                      </Link>
                     </Typography>
-                    <Typography>Graduate Trainee</Typography>
+                    <Typography>Front-End Developer</Typography>
                   </TimelineContent>
                 </TimelineItem>
 
+
+                {/* Skill Technologies – IT */}
                 <TimelineItem>
                   <TimelineOppositeContent
-                    sx={{ m: 'auto 0' }}
+                    sx={{ m: "auto 0" }}
                     variant="body2"
                     color="text.secondary"
                   >
-                    Nov-2019 - Aug-2022
+                    Aug-2023 - Feb-2025
                   </TimelineOppositeContent>
+
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="primary">
-                      <GiCartwheel size={25}/>
+                      <LaptopMacIcon />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: '12px', px: 2 }}>
+
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                     <Link to='/my-experience-2' className="learn-more-btn" onClick={() => window.scroll(0, 0)}>Rockman Industries Ltd..</Link> 
+                      <Link
+                        to="/my-experience-4"
+                        className="learn-more-btn"
+                        onClick={() => window.scroll(0, 0)}
+                      >
+                        Skill Technologies
+                      </Link>
                     </Typography>
-                    <Typography>Asst.Engineer</Typography>
+                    <Typography>Associate Software Developer</Typography>
                   </TimelineContent>
                 </TimelineItem>
 
+                {/* SaiRam Designs – Tech */}
                 <TimelineItem>
                   <TimelineOppositeContent
-                    sx={{ m: 'auto 0' }}
+                    sx={{ m: "auto 0" }}
                     align="right"
                     variant="body2"
                     color="text.secondary"
@@ -112,42 +146,92 @@ const OurServices = () => {
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="primary">
-                    <SiAutocad size={25}/>
+                      <SiAutocad size={25} />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: '10px', px: 2 }}>
-                    <Link to='/my-experience-3' className="learn-more-btn" onClick={() => window.scroll(0, 0)}>    <Typography variant="h6" component="span" style={{fontSize:'18px'}}>
-                    SaiRam Designs & Drafting
-                    </Typography></Link>
-                
+
+                  <TimelineContent sx={{ py: "10px", px: 2 }}>
+                    <Typography variant="h6" component="span" style={{ fontSize: "18px" }}>
+                      <Link
+                        to="/my-experience-3"
+                        className="learn-more-btn"
+                        onClick={() => window.scroll(0, 0)}
+                      >
+                        SaiRam Designs & Drafting
+                      </Link>
+                    </Typography>
                     <Typography>Autocad Designer</Typography>
                   </TimelineContent>
                 </TimelineItem>
 
+                {/* Rockman Industries */}
                 <TimelineItem>
                   <TimelineOppositeContent
-                    sx={{ m: 'auto 0' }}
+                    sx={{ m: "auto 0" }}
                     variant="body2"
                     color="text.secondary"
                   >
-                   Aug-2023 - Still
+                    Nov-2019 - Aug-2022
                   </TimelineOppositeContent>
+
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="primary">
-                      <LaptopMacIcon />
+                      <GiCartwheel size={25} />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: '12px', px: 2 }}>
+
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                     <Link to='/my-experience-4' className="learn-more-btn" onClick={() => window.scroll(0, 0)}>Skill Technologies</Link> 
+                      <Link
+                        to="/my-experience-2"
+                        className="learn-more-btn"
+                        onClick={() => window.scroll(0, 0)}
+                      >
+                        Rockman Industries Ltd.
+                      </Link>
                     </Typography>
-                    <Typography>Associate Software Developer</Typography>
+                    <Typography>Assistant Engineer</Typography>
                   </TimelineContent>
                 </TimelineItem>
+
+                {/* Vem Technologies – Oldest */}
+                <TimelineItem>
+                  <TimelineOppositeContent
+                    sx={{ m: "auto 0" }}
+                    align="right"
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    Aug-2018 - Nov-2019
+                  </TimelineOppositeContent>
+
+                  <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot color="primary">
+                      <LiaPlaneSolid size={25} />
+                    </TimelineDot>
+                    <TimelineConnector />
+                  </TimelineSeparator>
+
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      <Link
+                        to="/my-experience-1"
+                        className="learn-more-btn"
+                        onClick={() => window.scroll(0, 0)}
+                      >
+                        Vem Technologies
+                      </Link>
+                    </Typography>
+                    <Typography>Graduate Trainee</Typography>
+                  </TimelineContent>
+                </TimelineItem>
+
               </Timeline>
+
             </div>
 
             <div className="col-lg-6 col-md-12 services-right-image">

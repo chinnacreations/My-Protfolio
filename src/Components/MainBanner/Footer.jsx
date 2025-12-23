@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-import logo from "../../public/images/Logo/logo-bg-none.png";
+import logo from "../../public/Logos/TITLE LOGO.png";
 import map from '../../public/images/map.png'
 import shape1 from '../../public//images/shape1.png'
 import shape2 from '../../public//images/shape2.svg'
@@ -41,7 +41,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                Passionate software developer dedicated to crafting efficient, scalable, and user-centric solutions. With a keen interest in continuous learning, I thrive on leveraging cutting-edge technologies to drive innovation and solve complex problems, turning them into seamless digital experiences. My journey in software development is guided by a strong commitment to delivering high-quality solutions that meet both user needs and business objectives.
+                  Passionate software developer dedicated to crafting efficient, scalable, and user-centric solutions. With a keen interest in continuous learning, I thrive on leveraging cutting-edge technologies to drive innovation and solve complex problems, turning them into seamless digital experiences. My journey in software development is guided by a strong commitment to delivering high-quality solutions that meet both user needs and business objectives.
                 </p>
               </div>
             </div>

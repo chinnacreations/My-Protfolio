@@ -49,11 +49,11 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-md navbar-light">
               <Link to="/" className="navbar-brand">
                 <img
-                  className="logo-image-h-w w-[100] h-[100]"
+                  className="logo-image-h-w"
                   src={logo}
                   alt="logo"
                   width={100}
-                  height={50}
+                  height={100}
                 />
               </Link>
 
@@ -113,7 +113,7 @@ const NavBar = () => {
                   <li className="nav-item">
                     <Link
                       to="/contact/"
-                      className={`nav-link ${currentPath == "/contact/" && "active"
+                      className={`nav-link ${currentPath === "/contact/" && "active"
                         }`}
                       onClick={() => window.scroll(0, 0)}
                     >
