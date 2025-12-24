@@ -30,7 +30,7 @@ import { SiAutocad } from "react-icons/si";
 
 const OurServices = () => {
   const calculateITExperience = () => {
-    const startDate = new Date("2023-02-01"); // IT start
+    const startDate = new Date("2023-8-01"); // IT start
     const currentDate = new Date();
 
     const diffInMonths =
@@ -53,7 +53,7 @@ const OurServices = () => {
           >
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
-                <h2>MY EXPERIENCE {calculateITExperience()}</h2>
+                <h2>MY EXPERIENCE {" "}<strong>{calculateITExperience()}</strong> </h2>
                 <div className="bar"></div>
                 <p>
                   I am a passionate IT professional specializing in Front-End and Web

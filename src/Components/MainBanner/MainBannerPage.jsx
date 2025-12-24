@@ -22,19 +22,30 @@ export default function MainBannerPage() {
                     background: 'rgb(0 0 0 / 5%)',
                   }}
                 />
-                <div style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(100px, -50%)',
-                  color: '#fff',
-                  zIndex: '1000',
-                  fontSize: '22px',
-                  width: '350px',
-                  fontFamily: 'Miso-Light',
-                }}>
-                  HI..., I AM <span className='text-color-span-main-banner'>THIRUMANI SATISH</span>
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(100px, -50%)",
+                    color: "#fff",
+                    zIndex: "1000",
+                    fontSize: "22px",
+                    width: "350px",
+                    fontFamily: "Miso-Light",
+                    lineHeight: "1.4",
+                  }}
+                >
+                  <h2 className="text-white fw-bold mb-3">
+                    Hi, I'm <span className="text-color-span-main-banner">Thirumani Satish</span>
+                  </h2>
+                  <p className="text-white opacity-75" style={{ fontSize: "18px", lineHeight: "1.6" }}>
+                    As <strong>Front-End Developer</strong> with <strong>2+ years of professional experience</strong> in building high-performance, scalable, and user-centric web interfaces.
+                    Specialized in <strong>React.js, Next.js, JavaScript (ES6+)</strong>, and modern UI development using <strong>Tailwind CSS, Bootstrap, and reusable component systems</strong>.
+                    I engineer responsive digital experiences optimized for performance and measurable product impact.
+                  </p>
                 </div>
+
               </div>
             }
 
@@ -57,7 +68,17 @@ export default function MainBannerPage() {
                   fontSize: '22px',
                   fontFamily: 'Miso-Light',
                 }}>
-                  I AM A  <span className='text-color-span-main-banner'>MERN STACK DEVELOPER</span>
+                  <h3 className="text-color-span-main-banner fw-semibold" style={{ fontSize: "26px", letterSpacing: "1px" }}>
+                    FRONT-END ENGINEER
+                  </h3>
+                  <p className="text-white opacity-75" style={{ fontSize: "16px" }}>
+                    Developing responsive UIs with a performance-first approach <br />
+                    Building reusable and structured React components <br />
+                    Integrating REST APIs and third-party platform APIs <br />
+                    Improving Core Web Vitals through frontend optimizations <br />
+                    Understanding and contributing to monolith → micro (UI modularization & API separation)
+                  </p>
+
                 </div>
               </div>
             }

@@ -1,68 +1,70 @@
 import React from "react";
 
 import icon3 from "../../public/images/Whoweserve/Media.png";
-
-
-import mernstack from '../../public/images/team-image/Mernstack.png'
-import tool from '../../public/images/team-image/Tool-and-Die-Making.png'
-import education from '../../public/images/banner-image/education.png'
+import mernstack from "../../public/images/team-image/Mernstack.png";
+import tool from "../../public/images/team-image/Tool-and-Die-Making.png";
+import education from "../../public/images/banner-image/education.png";
 
 const Whoweserve = () => {
+  const qualifications = [
+    {
+      icon: mernstack,
+      title: "MERN Stack Development Certification",
+      desc: "Completed CCBP NxtWave certification, gaining strong hands-on experience in React.js, modern JavaScript, and component-based frontend development, along with practical exposure to building structured, scalable web applications."
+    },
+    {
+      icon: tool,
+      title: "Diploma in Tool & Die Making — NTTF",
+      desc: "Earned a diploma in precision engineering and tool design from NTTF, developing expertise in AutoCAD, Siemens NX, manufacturing fundamentals, and engineering design principles, strengthening analytical and problem-solving capabilities."
+    },
+    {
+      icon: icon3,
+      title: "SSC (10th Standard) — MJPA School",
+      desc: "Completed 10th standard under the SSC board, establishing a strong academic foundation and core learning discipline that supports continuous growth in technical and professional development."
+    }
+  ];
+
   return (
     <>
+      <section className="solutions-area ptb-80">
+        <div className="container">
 
-
-      <div className="solutions-area ptb-80">
-        <div className="container" >
-        <div className="section-title" id='my-qualification'>
-            <h2>MY QUALIFICATION</h2>
+          {/* Qualification Header */}
+          <header className="section-title text-center" id="my-qualification">
+            <h2>My Qualification</h2>
             <div className="bar"></div>
-            <p className="para-who-we-serve">
-              I hold a diploma in Tool & Die Making, equipping me with strong foundational knowledge in the field. Additionally, I've completed a certification course in Nxt Wave CCBP, enhancing my skills in MERN Stack Developer.
+            <p className="para-who-we-serve text-secondary">
+              A blend of precision engineering education and modern frontend development training, shaping a product-focused UI engineer with strong technical fundamentals and practical development experience.
             </p>
-          </div>
-          <div className="row justify-content-center">
-           
-            <div className="col-lg-4 col-sm-6 col-md-6">
-              <div className="single-solutions-box">
-                <div className="icon">
-                  <img src={mernstack} alt="icon" width={130} height={130} />
-                </div>
-                <h3 className="text-center">
-                  MERN STACK DEVELOPER
-                </h3>
-                <p>Certification Course At CCBP NXTWAVE, I learned MERN stack development, mastering MongoDB, Express.js, React, and Node.js for building dynamic web applications with a robust full-stack skill set.</p>
-              </div>
-            </div>
+            <p>
+              I hold a <strong>Diploma in Tool & Die Making</strong> from NTTF, supported by a <strong>MERN Stack Development Certification</strong> from NxtWave CCBP, where my primary focus and strongest expertise evolved in <strong>frontend engineering using React.js, Next.js, and modern UI development practices</strong>.
+            </p>
+          </header>
 
-            <div className="col-lg-4 col-sm-6 col-md-6">
-              <div className="single-solutions-box">
-                <div className="icon text-center">
-                  <img src={tool} alt="icon" width={195} height={195} />
-                </div>
-                <h3 className="text-center">
-                  DIPLOMA IN TOOL AND DIE MAKING
-                </h3>
-                <p>The Diploma in Tool and Die Making at NTTF equipped me with comprehensive skills in precision engineering,
-                  Autocad, NX, and tool design, preparing me for advanced manufacturing roles in the industry.</p>
+          {/* Qualification Cards */}
+          <div className="row justify-content-center g-4">
+            {qualifications.map((item, i) => (
+              <div key={i} className="col-lg-4 col-sm-6 col-md-6 d-flex">
+                <article className="single-solutions-box text-center w-100">
+                  <div className="icon mb-3">
+                    <img
+                      src={item.icon}
+                      alt=""
+                      width={150}
+                      height={150}
+                      loading="lazy"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <h3 className="h5 fw-semibold">{item.title}</h3>
+                  <p className="text-secondary small mb-0">{item.desc}</p>
+                </article>
               </div>
-            </div>
-
-            <div className="col-lg-4 col-sm-6 col-md-6">
-              <div className="single-solutions-box">
-                <div className="icon">
-                  <img src={icon3} alt="icon" width={150} height={150} />
-                </div>
-                <h3 className="text-center">
-                  X Class
-                </h3>
-                <p>X class SSC board at Mjpapbcwerls provided foundational education in various subjects essential for further academic pursuits and practical life skills.</p>
-              </div>
-            </div>
+            ))}
           </div>
+
         </div>
-      </div>
-
+      </section>
     </>
   );
 };
