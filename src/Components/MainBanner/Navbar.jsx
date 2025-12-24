@@ -117,7 +117,7 @@ const NavBar = () => {
                         }`}
                       onClick={() => window.scroll(0, 0)}
                     >
-                      Contact
+                      Contact Us
                     </Link>
                   </li>
                 </ul>
