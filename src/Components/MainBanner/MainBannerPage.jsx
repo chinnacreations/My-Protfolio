@@ -25,7 +25,7 @@ export default function MainBannerPage() {
                 <div
                   style={{
                     position: "absolute",
-                    top: "50%",
+                    top: "60%",
                     left: "50%",
                     transform: "translate(100px, -50%)",
                     color: "#fff",
@@ -36,14 +36,23 @@ export default function MainBannerPage() {
                     lineHeight: "1.4",
                   }}
                 >
-                  <h2 className="text-white fw-bold mb-3">
-                    Hi, I'm <span className="text-color-span-main-banner">Thirumani Satish</span>
+                  <h2 className="!text-[#4A148C] fw-bold mb-3">
+                    Hi, I'm <span className="!text-[#00796B]">Thirumani Satish</span>
                   </h2>
-                  <p className="text-white opacity-75" style={{ fontSize: "18px", lineHeight: "1.6" }}>
+
+                  <p
+                    style={{
+                      color: "#000000ff",
+                      fontSize: "18px",
+                      lineHeight: "1.6",
+                    }}
+                  >
                     As <strong>Front-End Developer</strong> with <strong>2+ years of professional experience</strong> in building high-performance, scalable, and user-centric web interfaces.
                     Specialized in <strong>React.js, Next.js, JavaScript (ES6+)</strong>, and modern UI development using <strong>Tailwind CSS, Bootstrap, and reusable component systems</strong>.
                     I engineer responsive digital experiences optimized for performance and measurable product impact.
                   </p>
+
+
                 </div>
 
               </div>
