@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
-import logo from "../../public/Logos/TITLE LOGO.png";
+import logo from "../../public/Logos/logo_1.png";
 
 const NavBar = () => {
   const [currentPath, setCurrentPath] = useState("");

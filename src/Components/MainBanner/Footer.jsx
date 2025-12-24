@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-import logo from "../../public/Logos/TITLE LOGO.png";
+import logo from "../../public/Logos/logo_1.png";
 import map from '../../public/images/map.png'
 import shape1 from '../../public//images/shape1.png'
 import shape2 from '../../public//images/shape2.svg'
