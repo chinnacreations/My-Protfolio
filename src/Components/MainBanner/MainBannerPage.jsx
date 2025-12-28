@@ -36,13 +36,13 @@ export default function MainBannerPage() {
                     lineHeight: "1.4",
                   }}
                 >
-                  <h2 className="!text-[#4A148C] fw-bold mb-3">
-                    Hi, I'm <span className="!text-[#00796B]">Thirumani Satish</span>
+                  <h2 className="!text-[#fff] fw-bold mb-3">
+                    Hi, I'm <span className="!text-[#fff]">Thirumani Satish</span>
                   </h2>
 
                   <p
                     style={{
-                      color: "#000000ff",
+                      color: "#fff",
                       fontSize: "18px",
                       lineHeight: "1.6",
                     }}
