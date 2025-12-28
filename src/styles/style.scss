@@ -1769,7 +1769,7 @@ Services CSS
             transition: $transition;
         }
 
-   
+
 
         &:hover {
             color: $white-color;
@@ -11386,12 +11386,22 @@ Go Top CSS
     margin-top: -49px;
 }
 
+// .baanner-image-main {
+//     background-image: url(../public/images/banner-image/bannerImage.png);
+//     height: 100vh;
+//     background-size:contain;
+//     width: 100vw;
+// }
 .baanner-image-main {
     background-image: url(../public/images/banner-image/bannerImage.png);
     height: 100vh;
-    background-size: cover;
-    width: auto;
+    width: 100vw;
+    background-size: auto 100vh;
+    /* width auto (normal), height contain full viewport */
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .contact-high-z-index {
     z-index: 50;
@@ -11594,23 +11604,26 @@ Go Top CSS
     font-weight: normal;
     font-style: inherit;
     font-weight: inherit;
-    animation: moveUpDown 2s ease-in-out infinite; 
+    animation: moveUpDown 2s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-10px); /* Adjust this value for desired movement */
+        transform: translateY(-10px);
+        /* Adjust this value for desired movement */
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
+}
 
 
-  .__rcs-handle-button {
+.__rcs-handle-button {
     animation: colorChange 0.5s infinite alternate;
 }
 
@@ -11618,6 +11631,7 @@ Go Top CSS
     0% {
         color: #ff34ee;
     }
+
     100% {
         color: #00ffff;
     }
@@ -11648,38 +11662,39 @@ Go Top CSS
 
         ;
 
-     
+
     }
 }
 
-.about-us-image-myprot{
+.about-us-image-myprot {
     height: 350px;
     width: 100%;
 }
 
-.skills-icons{
+.skills-icons {
     width: 150px;
     height: 100px;
-    margin-right:50PX !important;
+    margin-right: 50PX !important;
     margin-left: 50px !important;
 }
 
 @media (max-width:1000px) {
-    .skills-icons{
-        width:50px;
+    .skills-icons {
+        width: 50px;
         height: 50px;
-        margin-right:50PX !important;
+        margin-right: 50PX !important;
         margin-left: 50px !important;
     }
 }
 
-.span-link{
+.span-link {
     color: #00d9f2;
 }
-.span-link:hover{
+
+.span-link:hover {
     color: #000;
 }
 
-.list-style{
+.list-style {
     list-style-type: square;
 }

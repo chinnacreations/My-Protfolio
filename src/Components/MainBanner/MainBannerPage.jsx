@@ -12,7 +12,7 @@ export default function MainBannerPage() {
     <>
       <div className='bg-display-none'>
         <div className='baanner-image-main'>
-          <ReactCompareSlider
+          {/* <ReactCompareSlider
             itemOne={
               <div style={{ position: 'relative', height: '100%' }}>
                 <ReactCompareSliderImage
@@ -94,7 +94,7 @@ export default function MainBannerPage() {
 
 
             style={{ width: '100%', height: '100%', border: 'none', }}
-          />
+          /> */}
 
         </div>
       </div>
