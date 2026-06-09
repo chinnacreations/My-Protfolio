@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
+
 import contactImg from "../../public/images/Logo/contact.png";
 import { CiMail, CiLocationOn } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
@@ -10,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { FaXTwitter, FaLinkedinIn, FaWhatsapp, FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-const MySwal = withReactContent(Swal);
+
 
 // Form initial state
 const INITIAL_STATE = {
@@ -47,13 +46,7 @@ const ContactForm = () => {
     setContact((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleSelectChange = (e) => {
-    const { name, value } = e.target;
-    setContact((prevContact) => ({
-      ...prevContact,
-      [name]: value,
-    }));
-  };
+
 
   const handleCheckboxChange = (e) => {
     setIsCheckboxChecked(e.target.checked);
@@ -180,6 +173,7 @@ const ContactForm = () => {
                       href="tel:+919160591908"
                       className="whatsapp"
                       target="_blank"
+                      rel="noopener noreferrer"
                       onClick={handleWhatsAppClick}
                     >
                       <FaWhatsapp />
@@ -191,6 +185,7 @@ const ContactForm = () => {
                       href="https://x.com/satishthiruman?t=us8fPMHUkYWZLOdIRYuAHg&s=09"
                       className="twitter twitter-contact-page"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaXTwitter />
                     </a>
@@ -202,6 +197,7 @@ const ContactForm = () => {
                       href="https://www.linkedin.com/in/chinnacreations"
                       className="linkedin"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaLinkedinIn />
                     </a>
@@ -212,6 +208,7 @@ const ContactForm = () => {
                       href="https://www.instagram.com/chinna_creations_0191?igsh=dHo3YWNreGxoYzR2"
                       className="instagram"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaInstagram />
                     </a>
@@ -222,6 +219,7 @@ const ContactForm = () => {
                       href="https://www.facebook.com/profile.php?id=61562227289264&mibextid=ZbWKwL"
                       className="facebook"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaFacebookF />
                     </a>
