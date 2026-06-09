@@ -3,7 +3,6 @@ import React from "react";
 import icon3 from "../../public/images/Whoweserve/Media.png";
 import mernstack from "../../public/images/team-image/Mernstack.png";
 import tool from "../../public/images/team-image/Tool-and-Die-Making.png";
-import education from "../../public/images/banner-image/education.png";
 
 const Whoweserve = () => {
   const qualifications = [
