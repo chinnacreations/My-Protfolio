@@ -11,9 +11,14 @@ import bannerimage from "../../public/images/projects/bannerimage.png";
 import esgbureau from "../../public/images/projects/esgbureau.png";
 import plotNetwworks from "../../public/images/projects/plotnetworks.png"
 import Bulkly from "../../public/images/projects/bulkly.png"
+import yuvasaathi from "../../public/images/projects/yuvasaathi.png"
+import bmsk from "../../public/images/projects/bmsk.png"
 import { Link } from "react-router-dom";
 
 const technologiesData = [
+
+  { image: yuvasaathi, alt: "Yuva Saathi", url: "http://yuvasaathi.bihar.gov.in/" },
+  { image: bmsk, alt: "BMSK", url: "https://bmsk.gtplindia.com" },
 
   { image: esgbureau, alt: "ESG Bureau", url: "https://esgbureau.com/" },
   { image: plotNetwworks, alt: "Plot Networks", url: "https://plotnetwork.in/" },
@@ -48,7 +53,7 @@ const Projects = () => {
     <>
       <div className="mb-4 mt-5">
         <div className="section-title" id="projects">
-          <h3 className="text-center mt-5">MY PROJECTS</h3>
+          <h3 className="text-center">MY PROJECTS</h3>
           <div className="bar"></div>
         </div>
         <div className="brand-area mt-1">
@@ -83,9 +88,19 @@ const Projects = () => {
         </div>
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-12 col-md-6">
-            <img src={bannerimage} alt="bannerimage" />
+            <img 
+              src={bannerimage} 
+              alt="bannerimage" 
+              style={{
+                borderRadius: "16px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
+                width: "100%",
+                height: "auto",
+                display: "block"
+              }}
+            />
           </div>
           <div className="col-12 col-md-6">
             <div className="section-title">
@@ -93,6 +108,33 @@ const Projects = () => {
               <div className="bar"></div>
               <p>Over the past year, I've gained valuable hands-on experience working with a diverse range of projects, enhancing my skills as a MERN stack developer. I've collaborated with various clients and companies, contributing to the development and deployment of innovative solutions that meet their unique needs. My journey has involved both front-end and back-end development, utilizing the latest technologies to create responsive and efficient web applications.</p>
               <ul className="list-style">
+                <li>
+                  <span>
+                    <Link to="http://yuvasaathi.bihar.gov.in/" target="_blank" className="span-link">
+                      Yuva Saathi (Wysele Tech) :
+                    </Link>
+                  </span>
+                  Developed and optimized the dashboard interface for real-time skill insights, enrollment growth, and regional placement data visualization using React.js.
+                </li>
+
+                <li>
+                  <span>
+                    <Link to="https://bmsk.gtplindia.com" target="_blank" className="span-link">
+                      Bihar Mausam Sewa Kendra (Wysele Tech) :
+                    </Link>
+                  </span>
+                  Built the frontend weather-tracking portal, integrating weather APIs and implementing responsive charts and alert modules.
+                </li>
+
+                <li>
+                  <span>
+                    <Link to="" target="_blank" className="span-link">
+                      HRMS (Wysele Tech) :
+                    </Link>
+                  </span>
+                  Contributed to the development of the Human Resource Management System, creating employee dashboards, form validation systems, and leave request workflows.
+                </li>
+
                 <li>
                   <span>
                     <Link to="https://live.bulkly.io/" target="_blank" className="span-link">

@@ -56,7 +56,7 @@ const OurServices = () => {
                 <h2>MY EXPERIENCE {" "}<strong>{calculateITExperience()}</strong> </h2>
                 <div className="bar"></div>
                 <p>
-                  I am a passionate IT professional specializing in Front-End and Web
+                  I am a passionate IT professional specializing in Full-Stack and Web
                   Application Development. My experience focuses on building scalable,
                   high-performance applications using React.js, Next.js, and modern UI
                   frameworks. I excel in API integration, performance optimization, and
@@ -68,13 +68,46 @@ const OurServices = () => {
 
               <Timeline position="alternate">
 
+                {/* Wysele Technologies – Latest */}
                 <TimelineItem>
                   <TimelineOppositeContent
                     sx={{ m: "auto 0" }}
                     variant="body2"
                     color="text.secondary"
                   >
-                    Mar-2025 - Present
+                    Feb-2026 - Present
+                  </TimelineOppositeContent>
+
+                  <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot color="primary">
+                      <LaptopMacIcon />
+                    </TimelineDot>
+                    <TimelineConnector />
+                  </TimelineSeparator>
+
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      <Link
+                        to="/my-experience-wysele"
+                        className="learn-more-btn"
+                        onClick={() => window.scroll(0, 0)}
+                      >
+                        Wysele Technologies
+                      </Link>
+                    </Typography>
+                    <Typography>Full Stack Developer</Typography>
+                  </TimelineContent>
+                </TimelineItem>
+
+                {/* Galaxy Tech Solutions */}
+                <TimelineItem>
+                  <TimelineOppositeContent
+                    sx={{ m: "auto 0" }}
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    Mar-2025 - Feb-2026
                   </TimelineOppositeContent>
 
                   <TimelineSeparator>
@@ -95,7 +128,7 @@ const OurServices = () => {
                         Galaxy Tech Solutions
                       </Link>
                     </Typography>
-                    <Typography>Front-End Developer</Typography>
+                    <Typography>Full Stack Developer</Typography>
                   </TimelineContent>
                 </TimelineItem>
 

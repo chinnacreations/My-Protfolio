@@ -13,6 +13,8 @@ import Myexperience1 from './Components/Whatwedo/Myexperience1'
 import Myexperience2 from './Components/Whatwedo/Myexperience2'
 import Myexperience3 from './Components/Whatwedo/Myexperience3'
 import Myexperience4 from './Components/Whatwedo/Myexperience4'
+import MyexperienceGalaxy from './Components/Whatwedo/MyexperienceGalaxy'
+import MyexperienceWysele from './Components/Whatwedo/MyexperienceWysele'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import './App.css'
@@ -45,6 +47,8 @@ function App() {
           <Route path='/my-experience-2' element={<Myexperience2/>} />
           <Route path='/my-experience-3' element={<Myexperience3/>} />
           <Route path='/my-experience-4' element={<Myexperience4/>} />
+          <Route path='/my-experience-galaxy' element={<MyexperienceGalaxy/>} />
+          <Route path='/my-experience-wysele' element={<MyexperienceWysele/>} />
         </Routes>
        
         <ChatBot />

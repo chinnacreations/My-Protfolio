@@ -1,0 +1,501 @@
+/* 3D Console Styles & Core Animations */
+
+:root {
+  --neon-cyan: #06b6d4;
+  --accent-gold: #ffc107;
+  --console-bg: #030712;
+}
+
+/* Skills Wrapper */
+.skills-console-section {
+  position: relative;
+  background-color: var(--console-bg);
+  color: #ffffff;
+  padding: 80px 0;
+  overflow: hidden;
+  font-family: 'Outfit', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Title & Description */
+.skills-console-section .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  position: relative;
+  z-index: 20;
+}
+
+.skills-console-section .section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .skills-console-section .section-header h2 {
+    font-size: 3rem;
+  }
+}
+
+.skills-console-section .section-header h2 span {
+  font-weight: 700;
+  background: linear-gradient(to right, var(--accent-gold), #ffd54f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-console-section .section-header .bar {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--neon-cyan));
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+.skills-console-section .section-header p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Cyber Grid Floor Underlay */
+.cyber-grid-floor {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(0, 180, 216, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 180, 216, 0.07) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center;
+  transform: rotateX(45deg) translateY(140px);
+  transform-origin: center center;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+/* Ambient glow */
+.ambient-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  filter: blur(160px);
+  pointer-events: none;
+  opacity: 0.2;
+  transition: background 1s ease;
+}
+
+/* SVG Lines */
+.connector-svg-container {
+  position: absolute;
+  width: 980px;
+  height: 980px;
+  pointer-events: none;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.laser-line-glowing {
+  opacity: 0.15;
+  transition: opacity 0.5s ease;
+}
+
+.laser-line-main {
+  opacity: 0.4;
+  transition: opacity 0.5s ease;
+}
+
+.data-flow-line {
+  stroke-dasharray: 10 30;
+  animation: flow-data 1.5s linear infinite;
+}
+
+@keyframes flow-data {
+  to {
+    stroke-dashoffset: -40px;
+  }
+}
+
+/* 3D Console Viewport */
+.skills-console-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  user-select: none;
+  cursor: grab;
+  height: 450px;
+}
+
+@media (min-width: 576px) {
+  .skills-console-viewport {
+    height: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills-console-viewport {
+    height: 700px;
+  }
+}
+
+.skills-console-viewport:active {
+  cursor: grabbing;
+}
+
+/* Central Hub Styles */
+.central-hub {
+  position: absolute;
+  z-index: 15;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+}
+
+.hub-ring-dashed {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed;
+  opacity: 0.4;
+  width: 190px;
+  height: 190px;
+  transform: rotateX(45deg) translateZ(-40px);
+  animation: holo-spin-clockwise 25s linear infinite;
+  transition: border-color 0.7s ease;
+}
+
+.hub-ring-double {
+  position: absolute;
+  border-radius: 50%;
+  border: 4px double;
+  opacity: 0.2;
+  width: 150px;
+  height: 150px;
+  transform: rotateX(45deg) translateZ(-40px);
+  animation: holo-spin-counter 15s linear infinite;
+  transition: border-color 0.7s ease;
+}
+
+.hub-uplink-pillar {
+  position: absolute;
+  width: 80px;
+  height: 160px;
+  opacity: 0.25;
+  filter: blur(20px);
+  border-radius: 50%;
+  transform: translateY(-40px);
+  transition: background 0.7s ease;
+}
+
+.hub-badge-wrapper {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-24px);
+}
+
+.hub-orbit-hud {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed;
+  animation: orbit-rotation 12s linear infinite;
+  transition: border-color 0.7s ease;
+}
+
+.hub-dotted-hud {
+  position: absolute;
+  inset: 12px;
+  border-radius: 50%;
+  border: 1px dotted;
+  animation: holo-spin-counter 15s linear infinite;
+  transition: border-color 0.7s ease;
+}
+
+.hub-core-display {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: rgba(3, 7, 18, 0.95);
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  transition: border-color 0.7s ease, box-shadow 0.7s ease;
+}
+
+.hub-core-title {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.hub-core-sub {
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.hub-status-tag {
+  position: absolute;
+  background-color: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 8px;
+  color: #94a3b8;
+  font-family: monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hub-status-tag.tag-top {
+  top: -10px;
+}
+
+.hub-status-tag.tag-bottom {
+  bottom: -10px;
+}
+
+/* 3D Rotating Cards styling */
+.skill-card-3d {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 270px;
+  height: 180px;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.5s ease;
+}
+
+@media (min-width: 480px) {
+  .skill-card-3d {
+    width: 320px;
+    height: 200px;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .skill-card-3d {
+    width: 340px;
+    height: 210px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-card-3d {
+    width: 380px;
+    height: 240px;
+  }
+}
+
+.skill-card-glow-strip {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 2px;
+  border-radius: 9999px;
+  transition: opacity 0.5s ease;
+}
+
+.skill-card-3d-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.card-node-index {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.card-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.skill-card-3d h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .skill-card-3d h3 {
+    font-size: 1.15rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.skill-card-3d p {
+  font-family: 'DM Sans', sans-serif;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .skill-card-3d p {
+    font-size: 13px;
+  }
+}
+
+.skill-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: auto;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.skill-card-3d:hover .skill-card-link {
+  gap: 8px;
+}
+
+/* Animations */
+@keyframes holo-spin-clockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes holo-spin-counter {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes laser-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.95; }
+}
+
+.animate-laser-pulse {
+  animation: laser-pulse 2s ease-in-out infinite;
+}
+
+@keyframes brain-pulse {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-brain-pulse {
+  animation: brain-pulse 3s ease-in-out infinite;
+}
+
+@keyframes orbit-rotation {
+  0% {
+    transform: rotateX(70deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(70deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* Active Highlight Styles */
+.skill-card-3d.active {
+  box-shadow: 0 0 35px var(--card-glow-color);
+  background-color: rgba(11, 19, 41, 0.98) !important;
+  border-color: var(--card-color) !important;
+  border-width: 1.5px;
+}
+
+.skill-card-3d.active .card-node-index {
+  color: var(--card-color) !important;
+}
+
+.skill-card-3d.active h3 {
+  color: var(--card-color) !important;
+}
+
+.skill-card-3d.active p {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.skill-card-3d.active .card-icon-container {
+  background-color: var(--card-glow-color) !important;
+  color: var(--card-color) !important;
+  box-shadow: 0 0 8px var(--card-glow-color);
+}
+
+.skill-card-3d.active .skill-card-link {
+  color: var(--card-color) !important;
+}
+
