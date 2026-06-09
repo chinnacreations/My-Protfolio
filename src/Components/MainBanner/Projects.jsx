@@ -7,7 +7,6 @@ import tcs from "../../public/images/projects/tcs.png";
 import Drseenas from "../../public/images/projects/DrseenasDental.png";
 import servizee from "../../public/images/projects/servizee.png";
 import beemtech from "../../public/images/projects/beentech.png";
-import bannerimage from "../../public/images/projects/bannerimage.png";
 import esgbureau from "../../public/images/projects/esgbureau.png";
 import plotNetwworks from "../../public/images/projects/plotnetworks.png"
 import Bulkly from "../../public/images/projects/bulkly.png"
