@@ -91,9 +91,9 @@ const Projects = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
-            <img 
-              src={buziness} 
-              alt="Buziness.ai" 
+            <img
+              src={buziness}
+              alt="Buziness.ai"
               style={{
                 borderRadius: "16px",
                 boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
@@ -139,7 +139,7 @@ const Projects = () => {
                 <li>
                   <span>
                     <Link to="https://live.bulkly.io/" target="_blank" className="span-link">
-                      Bulkly (Galaxy Tech) :
+                      Bulkly (GEEKY Tech) :
                     </Link>
                   </span>
                   Worked on building and optimizing social media automation features using MERN stack, improving scheduling performance and UI responsiveness.
@@ -148,7 +148,7 @@ const Projects = () => {
                 <li>
                   <span>
                     <Link to="https://esgbureau.com/" target="_blank" className="span-link">
-                      ESG Bureau (Galaxy Tech) :
+                      ESG Bureau (GEEKY Tech) :
                     </Link>
                   </span>
                   Contributed to dashboard development, API integrations, and optimized ESG data visualization modules.
@@ -157,7 +157,7 @@ const Projects = () => {
                 <li>
                   <span>
                     <Link to="https://plotnetwork.in/" target="_blank" className="span-link">
-                      Plot Networks (Galaxy Tech) :
+                      Plot Networks (GEEKY Tech) :
                     </Link>
                   </span>
                   Developed scalable property listing UI components and integrated backend APIs for dynamic content loading.
@@ -165,7 +165,7 @@ const Projects = () => {
                 <li>
                   <span>
                     <Link to="https://buziness.ai/" target="_blank" className="span-link">
-                      Buziness.ai (Galaxy Tech) :
+                      Buziness.ai (GEEKY Tech) :
                     </Link>
                   </span>
                   Contributed to building the workspace and dashboard for Buziness AI, an all-in-one AI platform enabling businesses to generate professional designs (Design Expert), schedule automated social posts (Post Expert), launch AI-powered ad campaigns (Ad Expert), and capture leads (Lead Expert).

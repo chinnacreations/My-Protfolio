@@ -100,7 +100,7 @@ const OurServices = () => {
                   </TimelineContent>
                 </TimelineItem>
 
-                {/* Galaxy Tech Solutions */}
+                {/* GEEKY Tech Solutions */}
                 <TimelineItem>
                   <TimelineOppositeContent
                     sx={{ m: "auto 0" }}
@@ -125,7 +125,7 @@ const OurServices = () => {
                         className="learn-more-btn"
                         onClick={() => window.scroll(0, 0)}
                       >
-                        Galaxy Tech Solutions
+                        GEEKY Tech Solutions
                       </Link>
                     </Typography>
                     <Typography>Full Stack Developer</Typography>

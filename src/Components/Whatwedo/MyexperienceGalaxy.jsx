@@ -12,20 +12,20 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const MyexperienceGalaxy = () => {
   return (
     <>
-      <PageBanner pageTitle="GALAXY TECH SOLUTIONS" />
+      <PageBanner pageTitle="GEEKY Tech SOLUTIONS" />
       <div className="services-area ptb-80">
         <div id='who-we-are' className="container">
           <div className="row h-100 justify-content-center align-items-center">
             <div className="col-lg-6 col-md-12">
-              <img src={business} alt="Galaxy Tech Solutions" className='business-detailpage-image' />
+              <img src={business} alt="GEEKY Tech Solutions" className='business-detailpage-image' />
             </div>
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
-                <h2>Galaxy Tech Solutions</h2>
+                <h2>GEEKY Tech Solutions</h2>
                 <p>Mar-2025 - Feb-2026</p>
                 <div className="bar"></div>
                 <p>
-                  At Galaxy Tech Solutions, my role as a Full Stack Developer involved developing high-performance, scalable web applications, specializing in dashboard development, interactive visualizations, and automation tool logic. Here are key highlights of my experience:
+                  At GEEKY Tech Solutions, my role as a Full Stack Developer involved developing high-performance, scalable web applications, specializing in dashboard development, interactive visualizations, and automation tool logic. Here are key highlights of my experience:
                 </p>
               </div>
 
