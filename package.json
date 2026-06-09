@@ -55,7 +55,7 @@
     "react-parallax": "^3.5.1",
     "react-pdf": "^10.4.1",
     "react-router-dom": "^6.23.0",
-    "react-scripts": "^0.0.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.75.0",
     "sweetalert2": "^11.10.8",
     "sweetalert2-react-content": "^5.0.7",
