@@ -13,6 +13,7 @@ import plotNetwworks from "../../public/images/projects/plotnetworks.png"
 import Bulkly from "../../public/images/projects/bulkly.png"
 import yuvasaathi from "../../public/images/projects/yuvasaathi.png"
 import bmsk from "../../public/images/projects/bmsk.png"
+import buziness from "../../public/images/projects/buziness.png"
 import { Link } from "react-router-dom";
 
 const technologiesData = [
@@ -22,6 +23,7 @@ const technologiesData = [
 
   { image: esgbureau, alt: "ESG Bureau", url: "https://esgbureau.com/" },
   { image: plotNetwworks, alt: "Plot Networks", url: "https://plotnetwork.in/" },
+  { image: buziness, alt: "Buziness.ai", url: "https://buziness.ai/" },
 
   { image: Bulkly, alt: "Bulkly", url: "https://live.bulkly.io" },
 
@@ -91,8 +93,8 @@ const Projects = () => {
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
             <img 
-              src={bannerimage} 
-              alt="bannerimage" 
+              src={buziness} 
+              alt="Buziness.ai" 
               style={{
                 borderRadius: "16px",
                 boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
@@ -160,6 +162,14 @@ const Projects = () => {
                     </Link>
                   </span>
                   Developed scalable property listing UI components and integrated backend APIs for dynamic content loading.
+                </li>
+                <li>
+                  <span>
+                    <Link to="https://buziness.ai/" target="_blank" className="span-link">
+                      Buziness.ai (Galaxy Tech) :
+                    </Link>
+                  </span>
+                  Contributed to building the workspace and dashboard for Buziness AI, an all-in-one AI platform enabling businesses to generate professional designs (Design Expert), schedule automated social posts (Post Expert), launch AI-powered ad campaigns (Ad Expert), and capture leads (Lead Expert).
                 </li>
                 <li><span ><Link to="https://infoswangroup.com/" target="_blank" className="span-link">Skill Technologies :</Link></span>Independently developed and maintained high-performance applications, contributing to the company's innovative offerings.</li>
                 <li><span ><Link to="https://drseenasdental.com/home/" target="_blank" className="span-link">Drseenas Dental :</Link></span>Collaboratively worked with a team to create a user-friendly, responsive website, significantly improving the online presence of this healthcare provider.</li>

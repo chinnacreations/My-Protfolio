@@ -97,7 +97,7 @@ const AboutUs = () => {
                   <div className="about-stat-label">Perf Score</div>
                 </div>
                 <div className="about-stat-item">
-                  <div className="about-stat-num">20+</div>
+                  <div className="about-stat-num">13+</div>
                   <div className="about-stat-label">Projects</div>
                 </div>
               </div>

@@ -78,6 +78,20 @@ const MyexperienceGalaxy = () => {
                     aria-controls="panel4-content"
                     id="panel4-header"
                   >
+                    <h5>Buziness.ai (All-in-One AI Business Platform)</h5>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <p>
+                      Contributed to building frontend features and workspaces for Buziness AI. Developed user interfaces and workflow modules for features like the Design Expert (marketing creative builder), Post Expert (social media automation/scheduler), Ad Expert (Meta/Google Ad creation wizard), and Lead Expert (lead tracking and conversions) to streamline digital operations into one dashboard.
+                    </p>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel5-content"
+                    id="panel5-header"
+                  >
                     <h5>Front-End Performance Optimization</h5>
                   </AccordionSummary>
                   <AccordionDetails>
