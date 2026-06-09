@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import * as Icon from "react-feather";
+import React from 'react';
 import Pagebanner from '../Common/PageBanner'
 import intro from './../../public/images/terms-conditions/intro.png'
 import termsservices from './../../public/images/terms-conditions/useofcontent.png'

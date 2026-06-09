@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Pagebanner from '../Common/PageBanner'
 import { Link } from 'react-router-dom'
 
@@ -12,17 +12,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const PrivacyPolicy = () => {
 
-  const [readmore, setReadmore] = useState(false);
-  const [btnreadmore, setbtnreadmore] = useState('Readmore')
-  const fireReadmore = () => {
-    if (readmore === true) {
-      setReadmore(false)
-      setbtnreadmore('Readmore')
-    } else {
-      setReadmore(true)
-      setbtnreadmore('Readless')
-    }
-  }
   return (
     <>
       <Pagebanner pageTitle='PRIVACY POLICY' />

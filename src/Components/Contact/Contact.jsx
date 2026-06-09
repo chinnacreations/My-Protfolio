@@ -1,13 +1,10 @@
 import React, { useState, useRef } from "react";
-import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import contactImg from "../../public/images/Logo/contact.png";
-import baseUrl from "../../utils/baseUrl";
 import { CiMail, CiLocationOn } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
 import PageBanner from '../Common/PageBanner'
-import { FormatColorTextTwoTone } from "@mui/icons-material";
 import emailjs from '@emailjs/browser'
 import { useNavigate } from "react-router-dom";
 import { MdOutlineContactSupport } from "react-icons/md";
