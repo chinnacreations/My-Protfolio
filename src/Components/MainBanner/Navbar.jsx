@@ -1,20 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
 import logo from "../../public/Logos/logo_1.png";
 
 const NavBar = () => {
-  const [currentPath, setCurrentPath] = useState("");
+  const currentPath = "";
 
   const [menu, setMenu] = React.useState(true);
-
-  const handleScrollToElement = () => {
-    const element = document.getElementById("What-We-Do");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const toggleNavbar = () => {
     setMenu(!menu);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ChevronLeft, ChevronRight, Play, Pause, Cpu, Cloud, Users, Shield, Target } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Play, Pause, Cpu, Users, Shield, Target } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 // Style Import
@@ -86,7 +86,6 @@ const TRANSITION_DURATION = 1.6; // seconds
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [prevIndex, setPrevIndex] = useState(null);
   const [direction, setDirection] = useState(1); // 1 = forward, -1 = backward
   const [isPaused, setIsPaused] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -102,7 +101,6 @@ const Hero = () => {
     if (isTransitioning) return;
     setIsTransitioning(true);
     setDirection(dir);
-    setPrevIndex(currentIndex);
     setCurrentIndex(nextIndex);
     setProgress(0);
     progressRef.current = 0;
@@ -110,7 +108,6 @@ const Hero = () => {
 
     setTimeout(() => {
       setIsTransitioning(false);
-      setPrevIndex(null);
     }, TRANSITION_DURATION * 1000 + 100);
   }, [currentIndex, isTransitioning]);
 
@@ -153,11 +150,9 @@ const Hero = () => {
         setCurrentIndex((prev) => {
           const next = (prev + 1) % slides.length;
           setDirection(1);
-          setPrevIndex(prev);
           setIsTransitioning(true);
           setTimeout(() => {
             setIsTransitioning(false);
-            setPrevIndex(null);
           }, TRANSITION_DURATION * 1000 + 100);
           return next;
         });
