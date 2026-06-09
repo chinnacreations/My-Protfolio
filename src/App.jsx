@@ -16,6 +16,7 @@ import Myexperience4 from './Components/Whatwedo/Myexperience4'
 import MyexperienceGalaxy from './Components/Whatwedo/MyexperienceGalaxy'
 import MyexperienceWysele from './Components/Whatwedo/MyexperienceWysele'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 import './App.css'
 import './styles/bootstrap.min.css'
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
     <SpeedInsights/>
+    <Analytics />
       <Router>
         <NavBar />
         <Routes>
