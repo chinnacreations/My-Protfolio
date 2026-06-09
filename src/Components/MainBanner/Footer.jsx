@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-import { FaXTwitter, FaLinkedinIn, FaWhatsapp, FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
 import { FaInstagram, FaChevronUp } from "react-icons/fa";
 
 const Footer = () => {

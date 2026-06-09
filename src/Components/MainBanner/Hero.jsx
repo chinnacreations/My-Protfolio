@@ -109,7 +109,7 @@ const Hero = () => {
     setTimeout(() => {
       setIsTransitioning(false);
     }, TRANSITION_DURATION * 1000 + 100);
-  }, [currentIndex, isTransitioning]);
+  }, [isTransitioning]);
 
   const handleNext = useCallback(() => {
     goTo((currentIndex + 1) % slides.length, 1);

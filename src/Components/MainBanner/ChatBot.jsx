@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Modal from 'react-modal';
 import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineChatBubbleOvalLeft } from "react-icons/hi2";
@@ -11,7 +11,6 @@ Modal.setAppElement('#root');
 const ChatBot = () => {
   const form = useRef();
   const navigate = useNavigate();
-  const location = useLocation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     from_name: "",
