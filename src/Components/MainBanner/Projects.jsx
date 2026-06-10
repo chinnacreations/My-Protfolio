@@ -13,6 +13,7 @@ import Bulkly from "../../public/images/projects/bulkly.png"
 import yuvasaathi from "../../public/images/projects/yuvasaathi.png"
 import bmsk from "../../public/images/projects/bmsk.png"
 import buziness from "../../public/images/projects/buziness.png"
+import professionalJourney from "../../public/images/projects/professional_journey.png"
 import { Link } from "react-router-dom";
 
 const technologiesData = [
@@ -92,8 +93,8 @@ const Projects = () => {
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
             <img
-              src={buziness}
-              alt="Buziness.ai"
+              src={professionalJourney}
+              alt="Professional Journey"
               style={{
                 borderRadius: "16px",
                 boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
